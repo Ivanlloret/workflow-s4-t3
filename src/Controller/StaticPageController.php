@@ -77,4 +77,11 @@ class StaticPageController extends AbstractController
             'controller_name' => 'StaticPageController',
         ]);
     }
+
+    #[Route('/politica-cookies', name: 'app_politica_cookies')]
+    public function politicaCookies(): Response
+    {
+        return $this->render('static_page/politica-cookies.html.twig');
+    }
+
 }
