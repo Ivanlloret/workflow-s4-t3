@@ -1,254 +1,90 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'base.html.twig' %}
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %}Stockflow{% endblock %}
 
-  <!-- Aquí puedes agregar Bootstrap si lo necesitas -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Si usas iconos de FontAwesome, deja esta línea -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <link rel="icon" type="image/x-icon" href="https://stockflow.daw.iesevalorpego.es/img/favicon_4.ico">
-  <script src="./PoliticaCookies_files/script.js" defer=""></script>
-  <title>Aviso de cookies</title>
-</head>
-
-<body cz-shortcut-listen="true">
-  <header class="container-fluid">
+{% block main %}
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-10">
     <div class="row">
-      <div class="col-12">
-        <div class="menu-container">
-          <div class="logo-header">
-            <a href="https://stockflow.daw.iesevalorpego.es/index.html"><img
-                src="./PoliticaCookies_files/logo_header.png" alt="Logo de la empresa"></a>
-          </div>
-          <div class="busqueda">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="contenedorMenu">
-            <div class="primerMenu">
-              <ul class="primeraLista">
-                <li class="dropdown">
-                  PRODUCTO <span>^</span>
-                  <ul class="dropdown-menu" style="display: none;">
-                    <a href="https://stockflow.daw.iesevalorpego.es/descarrega/descarrega.html">
-                      <li>DESCARGA DE PRODUCTO</li>
-                    </a>
-                    <a href="https://stockflow.daw.iesevalorpego.es/preu_plans/preu_plans.html">
-                      <li>PLANES Y PRECIOS</li>
-                    </a>
-                  </ul>
-                </li>
-                <a href="https://stockflow.daw.iesevalorpego.es/casosExito/casosExito.html">
-                  <li>CASOS DE ÉXITO</li>
-                </a>
-                <a href="https://stockflow.daw.iesevalorpego.es/resenas/resenas.html">
-                  <li>RESEÑAS</li>
-                </a>
-              </ul>
-            </div>
+      <h1>Aviso de Cookies</h1>
+      <h3>Última actualización: 28 de octubre de 2024</h3>
 
-            <div class="segonMenu">
-              <ul class="segonaLista">
-                <a href="https://stockflow.daw.iesevalorpego.es/qui_som/qui_som.html">
-                  <li>QUIÉNES SOMOS</li>
-                </a>
-                <a href="https://stockflow.daw.iesevalorpego.es/blog/blog.html">
-                  <li>BLOG</li>
-                </a>
-                <a href="https://stockflow.daw.iesevalorpego.es/contactar/contactar.html">
-                  <li>CONTACTO</li>
-                </a>
-              </ul>
-              <div class="demoContainer">
-                <a href="https://stockflow.daw.iesevalorpego.es/descripcioProducte/descripcioproducte.html">
-                  <button id="demo">DEMO</button>
-                </a>
-              </div>
-            </div>
-            <div class="hamburguesa-container">
-              <i id="menuHamburguesa" class="fa-solid fa-bars"></i>
-            </div>
-          </div>
-        </div>
+      <p>Utilizamos cookies y herramientas similares (conjuntamente, “cookies”) para los fines descritos a
+        continuación.</p>
+
+      <p><span class="negreta">Cookies operativas:</span>Utilizamos cookies para prestar nuestros servicios, por
+        ejemplo:</p>
+
+      <div class="listaCookie">
+        <ul>
+          <li>Reconocer cuándo te registras para usar nuestros servicios.</li>
+          <li>Reconocerte como miembro de StockFlow y ofrecerte otras funcionalidades y servicios personalizados.
+          </li>
+          <li>Mostrar funcionalidades, productos y servicios que podrían ser de tu interés, incluidos los anuncios
+            en nuestros servicios si son de productos y servicios disponibles en StockFlow.</li>
+          <li>Mantener un registro de los productos guardados en tu cesta.</li>
+          <li>Prevenir actividades fraudulentas.</li>
+          <li>Mejorar la seguridad.</li>
+          <li>Mantener un registro de tus preferencias, como la divisa y el idioma.</li>
+        </ul>
       </div>
-    </div>
-  </header>
+      <p>También utilizamos cookies para entender cómo usan los clientes nuestros servicios y así poder mejorarlos.
+        Por ejemplo, usamos cookies para llevar a cabo investigaciones y análisis para mejorar el contenido, los
+        productos y los servicios de StockFlow, y para medir y entender el funcionamiento de nuestros servicios.</p>
 
-  <main class="container">
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <div class="row">
-          <h1>Aviso de Cookies</h1>
-          <h3>Última actualización: 28 de octubre de 2024</h3>
+      <p><span class="negreta">Cookies publicitarias:</span></p>
+      <p>También usamos cookies para ofrecer ciertos tipos de anuncios, incluidos los de aquellos productos y
+        servicios que no están disponibles en StockFlow, y otros anuncios relevantes para tus intereses.</p>
 
-          <p>Utilizamos cookies y herramientas similares (conjuntamente, “cookies”) para los fines descritos a
-            continuación.</p>
+      <p>Terceros autorizados también pueden utilizar cookies cuando interactúas con los servicios de StockFlow.
+        Estos terceros incluyen motores de búsqueda, proveedores de servicios de medición y analíticos, redes
+        sociales y compañías de publicidad. Los terceros utilizan cookies cuando proporcionan contenidos
+        publicitarios, incluidos anuncios relevantes para tus intereses, para medir la efectividad de sus anuncios y
+        para prestar servicios por cuenta de StockFlow.</p>
 
-          <p><span class="negreta">Cookies operativas:</span>Utilizamos cookies para prestar nuestros servicios, por
-            ejemplo:</p>
+      <p> Consulta el Aviso sobre publicidad basada en los intereses del usuario para saber cómo te muestra
+        StockFlow los anuncios basados en intereses. Para establecer tus preferencias de anuncios basados en
+        intereses, visita la página Preferencias de Publicidad de StockFlow. Podrás ver qué terceros autorizados
+        usan cookies y administrar cómo las usan si visitas la página de Cookies y opciones de publicidad.</p>
 
-          <div class="listaCookie">
-            <ul>
-              <li>Reconocer cuándo te registras para usar nuestros servicios.</li>
-              <li>Reconocerte como miembro de StockFlow y ofrecerte otras funcionalidades y servicios personalizados.
-              </li>
-              <li>Mostrar funcionalidades, productos y servicios que podrían ser de tu interés, incluidos los anuncios
-                en nuestros servicios si son de productos y servicios disponibles en StockFlow.</li>
-              <li>Mantener un registro de los productos guardados en tu cesta.</li>
-              <li>Prevenir actividades fraudulentas.</li>
-              <li>Mejorar la seguridad.</li>
-              <li>Mantener un registro de tus preferencias, como la divisa y el idioma.</li>
-            </ul>
-          </div>
-          <p>También utilizamos cookies para entender cómo usan los clientes nuestros servicios y así poder mejorarlos.
-            Por ejemplo, usamos cookies para llevar a cabo investigaciones y análisis para mejorar el contenido, los
-            productos y los servicios de StockFlow, y para medir y entender el funcionamiento de nuestros servicios.</p>
+      <p><span class="negreta">Información adicional</span></p>
 
-          <p><span class="negreta">Cookies publicitarias:</span></p>
-          <p>También usamos cookies para ofrecer ciertos tipos de anuncios, incluidos los de aquellos productos y
-            servicios que no están disponibles en StockFlow, y otros anuncios relevantes para tus intereses.</p>
+      <p>Las cookies operativas permanecerán en tu navegador durante 13 meses desde tu última visita a nuestros
+        servicios, excepto las cookies utilizadas para recordar tus preferencias de privacidad (como las
+        Preferencias de Publicidad), que podrán permanecer en tu navegador hasta 5 años. Las demás cookies
+        permanecen en tu navegador durante 13 meses desde que nos prestas tu consentimiento para utilizarlas.</p>
 
-          <p>Terceros autorizados también pueden utilizar cookies cuando interactúas con los servicios de StockFlow.
-            Estos terceros incluyen motores de búsqueda, proveedores de servicios de medición y analíticos, redes
-            sociales y compañías de publicidad. Los terceros utilizan cookies cuando proporcionan contenidos
-            publicitarios, incluidos anuncios relevantes para tus intereses, para medir la efectividad de sus anuncios y
-            para prestar servicios por cuenta de StockFlow.</p>
+      <p>Para gestionar las cookies, visita nuestra página de Cookies y opciones de publicidad. Aplicaremos tus
+        preferencias de cookies al servicio de StockFlow y al navegador en el que establezcas tus preferencias, y a
+        cualquier otro en el que inicies sesión. Si no inicias sesión, es posible que tengamos que preguntarte de
+        nuevo por tus preferencias. Algunos sistemas operativos móviles pueden limitar aún más el uso de cookies y
+        tecnologías similares; tus opciones no anulan esas configuraciones más limitadas en dichos dispositivos
+        móviles.</p>
 
-          <p> Consulta el Aviso sobre publicidad basada en los intereses del usuario para saber cómo te muestra
-            StockFlow los anuncios basados en intereses. Para establecer tus preferencias de anuncios basados en
-            intereses, visita la página Preferencias de Publicidad de StockFlow. Podrás ver qué terceros autorizados
-            usan cookies y administrar cómo las usan si visitas la página de Cookies y opciones de publicidad.</p>
+      <p>Si lo prefieres, consulta en los ajustes de tu navegador cómo evitar que éste acepte cookies nuevas, cómo
+        configurar tu navegador para que te notifique cuando reciba una cookie nueva, cómo deshabilitar y eliminar
+        las cookies, y cuándo caducarán las cookies.</p>
 
-          <p><span class="negreta">Información adicional</span></p>
+      <p>Las cookies operativas te permitirán aprovechar algunas de las funcionalidades esenciales de StockFlow. Si
+        bloqueas o rechazas de cualquier otra forma cookies operativas a través de los ajustes de tu navegador, es
+        posible que algunas funcionalidades y servicios no funcionen. Por ejemplo, no podrás añadir elementos a tu
+        cesta, tramitar pedidos o usar cualquier servicio de StockFlow que requiera que inicies sesión. Es posible
+        que debas ajustar manualmente algunas de tus preferencias cada vez que utilices nuestros servicios.</p>
 
-          <p>Las cookies operativas permanecerán en tu navegador durante 13 meses desde tu última visita a nuestros
-            servicios, excepto las cookies utilizadas para recordar tus preferencias de privacidad (como las
-            Preferencias de Publicidad), que podrán permanecer en tu navegador hasta 5 años. Las demás cookies
-            permanecen en tu navegador durante 13 meses desde que nos prestas tu consentimiento para utilizarlas.</p>
+      <p>Consulta nuestro <a
+          href="https://stockflow.daw.iesevalorpego.es/politicaCookies/politicaCookies.html">Aviso de Privacidad</a>
+        para más información sobre los tipos de información que recabamos.</p>
 
-          <p>Para gestionar las cookies, visita nuestra página de Cookies y opciones de publicidad. Aplicaremos tus
-            preferencias de cookies al servicio de StockFlow y al navegador en el que establezcas tus preferencias, y a
-            cualquier otro en el que inicies sesión. Si no inicias sesión, es posible que tengamos que preguntarte de
-            nuevo por tus preferencias. Algunos sistemas operativos móviles pueden limitar aún más el uso de cookies y
-            tecnologías similares; tus opciones no anulan esas configuraciones más limitadas en dichos dispositivos
-            móviles.</p>
-
-          <p>Si lo prefieres, consulta en los ajustes de tu navegador cómo evitar que éste acepte cookies nuevas, cómo
-            configurar tu navegador para que te notifique cuando reciba una cookie nueva, cómo deshabilitar y eliminar
-            las cookies, y cuándo caducarán las cookies.</p>
-
-          <p>Las cookies operativas te permitirán aprovechar algunas de las funcionalidades esenciales de StockFlow. Si
-            bloqueas o rechazas de cualquier otra forma cookies operativas a través de los ajustes de tu navegador, es
-            posible que algunas funcionalidades y servicios no funcionen. Por ejemplo, no podrás añadir elementos a tu
-            cesta, tramitar pedidos o usar cualquier servicio de StockFlow que requiera que inicies sesión. Es posible
-            que debas ajustar manualmente algunas de tus preferencias cada vez que utilices nuestros servicios.</p>
-
-          <p>Consulta nuestro <a
-              href="https://stockflow.daw.iesevalorpego.es/politicaCookies/politicaCookies.html">Aviso de Privacidad</a>
-            para más información sobre los tipos de información que recabamos.</p>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-1"></div>
-  </main>
-  <footer class="container-fluid" id="fonsFooter">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="stockFlow-container">
-            <div class="img-container">
-              <img id="logoFooter" src="./PoliticaCookies_files/logo_footer.png" alt="">
-            </div>
-            <div class="stockFlow-text-container">
-              <p>
-                <a
-                  href="https://www.google.es/maps/place/Carrer+Duanes,+17,+03780+Pego,+Alacant/@38.8449193,-0.1151114,17z/data=!3m1!4b1!4m6!3m5!1s0xd61e51e2474a3f3:0x2bb2163fd7fdd695!8m2!3d38.8449152!4d-0.1125365!16s%2Fg%2F11cp7md4cb?hl=es&amp;entry=ttu&amp;g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D">
-                  <i id="iconoUbicacion" class="fa-solid fa-location-dot"></i></a>
-                <span id="ubicacion">C/Duanes, 17 - Pego </span>
-              </p>
-              <p>
-                <a href="https://stockflow.daw.iesevalorpego.es/contactar/contactar.html"><i id="iconoTelefono"
-                    class="fa-solid fa-phone"></i></a>
-                <span id="telefono">+34 966 409 960 </span>
-              </p>
-              <p>
-                <a href="https://stockflow.daw.iesevalorpego.es/contactar/contactar.html"> <i id="iconoCorreo"
-                    class="fa-solid fa-envelope"></i></a>
-                <span id="correo">03007613@edu.gva.es</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="legalidad-container">
-            <div class="legalidad-contenido">
-              <p id="tituloLegalidad">Legal</p>
-              <div class="avisoLegalidad">
-                <p><a href="https://stockflow.daw.iesevalorpego.es/faqs/faqs.html">FAQs</a></p>
-                <p><a href="https://stockflow.daw.iesevalorpego.es/avisoLegal/avisoLegal.html">Aviso legal</a></p>
-                <p><a href="https://stockflow.daw.iesevalorpego.es/politicaCookies/politicaCookies.html">Política de
-                    cookies</a></p>
-                <p><a href="https://stockflow.daw.iesevalorpego.es/politicaPrivacidad/politicaPrivacidad.html">Política
-                    de privacidad</a>
-                </p>
-              </div>
-
-              <div class="redesSociales-container">
-                <a href="https://x.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><i
-                    class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-5">
-          <div class="newsLetter-container">
-            <div class="newsLetter-contenido">
-              <p id="tituloNewsLetter">NEWSLETTERS</p>
-              <div class="inputsNewsLetter">
-                <div class="nombre-contenedor">
-                  <p>* Nombre</p>
-                  <input type="text" id="nombre" placeholder="Indica tu nombre">
-                </div>
-                <div class="correo-contenedor">
-                  <p>* Email</p>
-                  <input type="text" id="correo" placeholder="Indica tu email">
-                </div>
-              </div>
-              <div class="checkboxNewsLetter">
-                <input type="checkbox" id="checkboxCondicions">
-                <label for="">Acepto <span> <a
-                      href="https://stockflow.daw.iesevalorpego.es/terminos_condiciones/terminos_condiciones.html">términos</a></span>
-                  y <span><a
-                      href="https://stockflow.daw.iesevalorpego.es/terminos_condiciones/terminos_condiciones.html">condiciones</a></span></label>
-              </div>
-              <div class="botonNewsLetter">
-                <button id="btnSuscripcio">Suscríbete</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="container-fluid" id="copyrightFondo">
-    <div class="row">
-      <div class="col-6">
-      </div>
-      <div class="col-6">
-        <div class="copyright">
-          <p id="textoCopyright"> © Copyright 2024. Todos los derechos reservados</p>
-        </div>
-      </div>
     </div>
   </div>
-</body>
+</div>
+<div class="col-1"></div>
 
-</html>
+
+{% endblock %}
+
+
+
+
+

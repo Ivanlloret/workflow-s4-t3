@@ -23,37 +23,153 @@
         rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid fonsGris">
         <div class="row">
             <div class="col-12">
-                <a href="{{ url('app_index')}}"><img class="img-fluid" src="{{ asset("images/base/logo_header.png") }}" alt="Logo"></a>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <ul>
-                    <li class="dropdown">
-                        PRODUCTO <span>^</span>
-                        <ul>
-                            <li><a href="{{ url('app_descarrega') }}">DESCARGA DE PRODUCTO</a></li>
-                            <li><a href="{{ url('app_plans_preus') }}">PLANES Y PRECIOS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ url('app_casos_exit') }}">CASOS DE ÉXITO</a></li>
-                    <li><a href="{{ url('app_resenyes') }}">RESEÑAS</a></li>
-                </ul>
-                <ul>
-                    <li><a href="{{ url('app_qui_som') }}">QUIÉNES SOMOS</a></li>
-                    <li><a href="{{ url('app_blog_index') }}">BLOG</a></li>
-                    <li><a href="{{ url('app_contacte') }}">CONTACTO</a></li>
-                </ul>
-                <a href="{{ url('app_descripcio_producte') }}"><button>DEMO</button></a>
-                <i class="fa-solid fa-bars"></i>
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+                        <div class="container-fluid fonsGris">
+                          <div class="ps-3 py-2 d-flex align-items-center">
+                            <img class="w-50 pt-1 d-none d-md-flex" src="{{ asset("images/base/logo_header.png") }}" alt="Logo_StockFlow">
+                            <img class="w-25 pt-2 d-flex d-md-none" src="{{ asset("images/base/logo_header.png") }}" alt="Logo_StockFlow">
+                          </div>
+                          <div class="pt-1 ps-lg-2">
+                            <i class="bi bi-search fs-2 ps-1"></i>
+                          </div>
+                          <div class="pe-3 pt-1">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                          </div>                    
+                          <div class="collapse navbar-collapse ps-2 ps-lg-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-4 ps-md-2 pt-md-1 ">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle pt-0 pt-sm-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      PRODUCTO
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">DESCARGA DE PRODUCTO</a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item" href="#">PLANES Y PRECIOS</a></li>                         
+                                    </ul>
+                                </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">CASOS DE ÉXITO</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">RESEÑAS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">QUIÉNES SOMOS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                              </li>
+                              <li class="nav-item pe-2">
+                                <a class="nav-link pb-0" href="#">CONTACTO</a>
+                              </li>
+                            </ul>
+                            <div class="pb-3 pb-lg-0 ps-4 ps-md-2 pe-lg-3">
+                                <button class="btn fonsTaronja py-0 px-2 rounded-3 text-light border border-black">DEMO</button>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>             
             </div>
         </div>
     </header>
     
+   
     <main class="container">
         {% block main %}
         {% endblock %}
     </main>
+
+    <footer class="container-fluid fonsBlauOscur bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-xl-10">
+                    <div class="container">
+                        <div class="row">
+                            <div
+                                class="col-xl-4 col-sm-6 d-flex justify-content-center justify-content-xl-start px-lg-0 ps-0 pt-xl-3 border-bottom border-secondary border-sm-bottom-0">
+                                <div>
+                                    <div class="d-flex justify-content-center justify-content-xl-start ps-2 ps-lg-0 pt-3 pt-lg-0 px-lg-0">
+                                        <img class="w-50 pb-xxl-3 pb-xl-5" src="{{ asset("images/base/logo_header.png") }}"  alt="Logo_StockFlow">
+                                    </div>
+                                    <div class="ps-3 ps-md-3 ps-lg-0 pt-2 pt-md-1 pt-xxl-0 pt-xl-3">
+                                        <p class="pt-xl-4 d-flex align-items-center mb-0">
+                                            <span class="bi bi-geo-alt-fill text-light fs-3 pe-2"></span>
+                                            <span class="text-light">C/Duanes, 17 - Pego</span>
+                                        </p>
+                                        <p class="text-light d-flex align-items-center pt-2 mb-0">
+                                            <span class="bi bi-telephone-fill text-light fs-3 pe-2"></span>
+                                            <span class="text-light">+34 966 409 960</span>
+                                        </p>
+                                        <p class="text-light d-flex align-items-center pt-2 pb-3 pb-sm-0">
+                                            <span class="bi bi-envelope-fill text-light fs-3 pe-2"></span>
+                                            <span class="text-light">03007613@edu.gva.es</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-xl-4 col-sm-6 d-flex flex-column justify-content-md-center justify-content-xl-start  text-center border-bottom border-secondary border-sm-bottom-0">
+                                <div class="pt-2 pt-sm-0 pt-md-1 pt-lg-4">
+                                    <p class="text-light fw-bold ps-lg-0 pt-4 pt-sm-3 pt-md-4 pt-xl-2 pb-sm-3 pb-xl-5">Legal</p>
+                                </div>
+                                <div class="pb-sm-3 pb-md-2 pb-xl-5 pt-sm-4 pt-md-3 pt-xxl-0">
+                                    <p class="pt-xl-2 pt-xxl-0 text-light mb-0"><a class="text-light" href="">Aviso legal</a></p>
+                                    <p class="text-light mb-0"><a class="text-light" href="">Política de cookies</a></p>
+                                    <p class="text-light mb-0"><a class="text-light" href="">Política de privacidad</a>
+                                    </p>
+                                </div>
+
+                                <div class="pt-sm-4 pt-xxl-1 gap-4 d-flex justify-content-center pb-4 pb-xxl-3">
+                                    <a href="#">
+                                        <span class="bi bi-twitter text-light fs-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="bi bi-linkedin text-light fs-3"></span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="bi bi-youtube text-light fs-3"></span>
+                                    </a>       
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <div class="d-flex justify-content-center ps-xl-5 pt-3 pt-sm-0 pt-xxl-3 pt-xl-2">
+                                    <p class="fw-bold text-light pt-4 pt-sm-0 pt-md-1 pt-xl-2 pt-xxl-0 ps-xl-3 mb-0">NEWSLETTERS</p>
+                                </div>
+                                <div class="d-flex justify-content-center ps-xl-5 pt-1 text-center">
+                                    <form action="">
+                                        <label for="Nombre" class="text-light form-label ps-xl-3">* Nombre</label>
+                                        <input type="text" class="form-control mb-3 ms-1 px-5">
+                                        <label for="email" class="text-light form-label ps-xl-3">* Email</label>
+                                        <input type="text" class="form-control ms-1 mb-2 px-5">
+                                        <div
+                                            class="d-xxl-flex d-xl-block d-flex align-items-center justify-content-center justify-content-xl-start ms-xl-1 ms-xxl-2 pt-2 w-100">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="text-light ps-3 ps-xl-4 ps-xxl-2 mb-0">Acepto los <a href="../terminos_condiciones/terminos_condiciones.html"
+                                                    class="text-light">terminos</a> y <a class="text-light"
+                                                    href="../terminos_condiciones/terminos_condiciones.html">condiciones</a></p>
+                                        </div>
+                                        <div class="ps-xl-3 pt-3 pb-3">
+                                            <button
+                                                class="btn btn-primary fonsTaronja border border-0 py-1 px-2">Suscríbete</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </footer>
 
     <footer class="container-fluid">
         <div class="container">
@@ -73,7 +189,7 @@
                     <ul>
                         <li><a href="../faqs/faqs.html">FAQs</a></li>
                         <li><a href="../avisoLegal/avisoLegal.html">Aviso legal</a></li>
-                        <li><a href="../politicaCookies/politicaCookies.html">Política de cookies</a></li>
+                        <li><a href="{{ url('app_politica_cookies')}}">Política de cookies</a></li>
                         <li><a href="../politicaPrivacidad/politicaPrivacidad.html">Política de privacidad</a></li>
                     </ul>
                     <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
