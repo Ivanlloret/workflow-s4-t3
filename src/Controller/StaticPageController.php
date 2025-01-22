@@ -77,4 +77,10 @@ class StaticPageController extends AbstractController
             'controller_name' => 'StaticPageController',
         ]);
     }
+
+    #[Route('/politica-privacidad', name: 'app_politica_privacidad')]
+    public function politicaprivacidad(): Response
+    {
+        return $this->render('static_page/politica-privacidad.html.twig',);
+    }
 }
